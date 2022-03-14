@@ -1,0 +1,15 @@
+# The list,numb,contains integers.write code that populates the listremainder with the remainder of 
+# 36 divide by each numb.for eg. the element should be 0, because 36/6 has no remainder. If there is an error, 
+# have the string "error" appear in the remainder
+
+numb=[6, 0, 36, 8, 2, 36, 0, 12, 60, 0, 45, 0, 3, 23]
+
+remainder=[]
+for n in numb:
+    try:
+        remainder.append(36%n)
+    except ZeroDivisionError:
+        remainder.append("Error")
+        
+print (remainder)
+    
